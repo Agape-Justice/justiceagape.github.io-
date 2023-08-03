@@ -1,0 +1,307 @@
+﻿
+*{
+	margin:0px;
+	padding:0px;
+}
+
+/*LOGO designs andd character*/
+
+h1{
+	font-family:Old English Text MT;
+	color:darkblue;
+	margin:15px;
+	font-size:45px;
+}
+
+
+/*Navigation Menu Start Here*/
+.menu{
+	background-color: darkblue;
+	outline:1px solid white;
+	height:45px;
+	position:-webkit-sticky;
+	position:sticky;
+	top:0;
+}
+
+.menu ul, li, a{
+	overflow:hidden;
+	display:flex;
+	text-decoration:none; 
+	list-style:none; 
+	float:right;	
+}
+
+.menu a{
+	margin: 15px 25px 0 15px;
+	color:white;
+	font-weight:bold;
+	transition:0.5s ease-in;
+		
+}
+
+
+.menu a:hover{
+	border-bottom:1px solid white;
+	color:red;	
+}
+
+
+/* Home section start here*/
+
+.Home{
+	width:100%;
+	background-image:url('../images/car.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:700px;
+}
+
+
+.Hero{
+	padding-top:10%;
+	padding-left:30%;
+
+}
+
+
+
+.Hero p{
+	font-size:20px;
+	Color:white;
+	font-weight:bold;
+	outline:1px solid white;
+	background-color:black;
+	width:235px;
+	border-radius:3px;
+	padding-left:60px;
+}
+
+.Hero h2{
+	font-size:45px;
+	Color:red;
+	outline:1px solid white;
+	background-color:white;	
+	width:300px;
+	border-radius:8px;
+	margin-top:5px;
+}
+
+.Hero h2:hover{
+	background-color:darkblue;
+	color:white;
+}
+
+
+.Hero span{
+	color:darkblue;
+}
+
+
+.Hero span:hover{
+	color:white;
+}
+
+/* Home Image Hero*/
+
+.Hero .man img{
+	border-radius:10px;
+	border:2px solid darkblue;
+	margin-bottom:0;
+}
+
+
+.Hero .man img{
+	width:20px
+	height:40px;
+	margin-top:100px;
+	margin-left:300px;
+
+}
+	
+
+/*Services section Start Here*/
+.services{
+	width:100%;
+	background-color:darkblue;
+	height:40%;
+	border-top:2px solid white;
+}
+
+.services h2{
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	margin-top:5%;
+}
+
+
+.services p{
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+
+/*card services start here*/
+
+.container{
+	text-align:center;
+	padding:2% 12px 5% 0;
+	display:flex;
+	padding-left:10%;
+	padding-bottom:10%;	
+}
+
+.card{
+	background-color:white;
+	color:darkblue;
+	font-size:18px;
+	border-radius:13px;
+	padding:5px 10px;
+	margin:15px;
+	height:20%;
+	width:25%;
+	text-align:center;
+	border:1px solid red;
+	font-weight:bold;
+
+}
+
+.card:hover{
+	background-color:black;
+	height:%;
+	color:white;
+	border:1px solid white;
+}
+
+/* footer designs and text start here*/
+
+.footer{
+	background-color:darkblue;
+	border-top:2px solid white;
+	width:100%;
+	height:50%;
+}
+
+.footer h2{
+	color:white;
+	text-align:center;
+	margin-top:3%;
+}
+
+.tel{
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	font-family:tahoma;
+	padding:20px;
+	text-align:center;
+	margin:5px;
+	font-size:26px;	
+}
+ .tel a{
+	color:white;
+}
+
+.tel button {
+	color:white;
+	background-color:darkblue;
+	font-size:20px;
+	font-weight:bold;
+	border:3px solid white;
+	border-radius:5%;
+	margin:10px;
+	transition:1s ease-in-out;
+}
+
+button a:hover{
+	background-color:white;
+	color:darkblue;
+}
+
+
+/*Creating or Building The Responsive Part of  the web site*/
+
+@media screen and (max-width:700px){
+
+body{
+	width:100%;
+}
+	
+	.Hero .man img{
+	border-radius:10px;
+	border:2px solid red;
+	margin-bottom:0;
+}
+
+
+.Hero .man img{
+	width:20px
+	height:40px;
+	margin-top:100px;
+	margin-left:15%;
+
+}
+
+
+/*Creating or Building The Responsive Part of  the web site for the menu-navbars*/
+
+.menu{
+	background-color: darkblue;
+	outline:1px solid white;
+	height:60px;
+	position:-webkit-sticky;
+	position:sticky;
+	top:0;
+}
+
+.menu ul, li, a{
+	overflow:hidden;
+	display:flex;
+	text-decoration:none; 
+	list-style:none; 
+		
+}
+
+.menu a{
+	margin: 15px 25px 0 15px;
+	color:white;
+	font-weight:bold;
+	transition:0.5s ease-in;
+	font-size:25px;
+
+		
+}
+
+
+.menu a:hover{
+	border-bottom:1px solid white;
+	color:red;	
+}
+
+
+/* Responsive Services Part*/
+
+.container{
+	text-align:center;
+	display:block;
+	padding-left:15%;
+	padding-bottom:10%;
+	
+}
+	
+
+	.card{
+	width:80%;
+	height:250px;
+	font-size:22px;
+
+
+
+}
+
+}
+
+
+	
