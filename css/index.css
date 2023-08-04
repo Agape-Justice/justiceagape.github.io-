@@ -223,7 +223,9 @@ button a:hover{
 
 /*Creating or Building The Responsive Part of  the web site*/
 
-@media screen and (max-width:700px){
+
+
+@media screen and (max-width:600px){
 
 body{
 	width:100%;
@@ -236,13 +238,54 @@ body{
 }
 
 
+/*Creating and arranging the photo and the text in home page*/
+
+
+
+
+
+.Home{
+
+	margin:0%;
+
+}
+
+
+
+
+.Hero{
+	padding-left:10%;
+
+}
+
+
+
+
+
+/* Home Image Hero*/
+
+.Hero .man img{
+	border-radius:10px;
+	border:2px solid darkblue;
+	margin-bottom:0;
+}
+
+
 .Hero .man img{
 	width:20px
 	height:40px;
 	margin-top:100px;
-	margin-left:15%;
+	margin-left:35px;
 
 }
+	
+
+
+
+
+
+
+
 
 
 /*Creating or Building The Responsive Part of  the web site for the menu-navbars*/
@@ -269,16 +312,12 @@ body{
 	color:white;
 	font-weight:bold;
 	transition:0.5s ease-in;
-	font-size:25px;
+	font-size:16px;
 
 		
 }
 
 
-.menu a:hover{
-	border-bottom:1px solid white;
-	color:red;	
-}
 
 
 /* Responsive Services Part*/
@@ -286,7 +325,7 @@ body{
 .container{
 	text-align:center;
 	display:block;
-	padding-left:15%;
+	padding-left:10%;
 	padding-bottom:10%;
 	
 }
@@ -294,14 +333,112 @@ body{
 
 	.card{
 	width:80%;
-	height:250px;
-	font-size:22px;
+	height:200px;
+	font-size:16px;
 
 
 
 }
 
+
+
+/* Creating the footer*/
+
+
+.tel p{
+	font-size:16px;
+
 }
 
+} 
 
+
+
+/*Creating the Phone Size Responsive*/
+
+@media screen and (max-width:900px){
+	body{
+	width:100%;
+	}
+	
+	h1{
+	font-family:Old English Text MT;
+	color:darkblue;
+	margin:15px;
+	font-size:30px;
+	}
+	
+ 	
+	.menu a{
+	font-size:14px;
+	margin:25px 10px 0 5px;
+	}
+
+
+	.Home{
+	background-image:url('../images/car.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:500px;
+	}
+
+	.Hero .man img{
+	width:50%;
+	}
+
+	.Hero p{
+	font-size:16px;
+	width:150px;
+	height:20px;
+	padding:0% 0% 0% 5%;
+	margin-left:5%;
+	text-align:center;
+	}
+
+	.Hero h2{
+	font-size:30px;
+	padding-left:0%;
+	width:200px;
+	}
+
+
+/*Services Part Of it container or card*/
+
+
+
+	.container{
+	text-align:center;
+	display:block;
+	padding-left:5%;
+	padding-bottom:10%;
+	
+	}
+	
+
+	.card{
+	width:80%;
+	height:210px;
+	font-size:14px;
+	}
+
+
+
+/*CONTACT Part Of it container or card*/
+
+	.footer{
+	font-size:14px;
+	}
+	
+	.tel p{
+	font-size:14px;
+	margin-left:0;
+	}
+
+	.tel button{
+	width:150px;
+	font-size:16px;
+	}
+
+
+}
 	
