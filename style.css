@@ -1,0 +1,572 @@
+﻿*{
+	padding:0px;
+	Margin:0px;
+	list-style-type:none;
+	text-decoration:none;
+	scroll-behavior:smooth;
+}
+
+/*----------------creating and developing the navbar ---------------------*/
+
+.navbar{
+	display:flex;
+	background-color:black;
+	height:45px;
+	justify-content:space-between;
+	padding-top:20px;
+	font-weight:bold;
+	border-bottom:2px solid #59fc00;
+	top:0;
+	position:-webkit-sticky;
+	position:sticky;
+	z-index:100;
+	width:100%;
+	
+}
+
+.navbar ul{
+
+	display:flex;
+	float:right;
+	margin-right:10%;
+	margin-top:5px;
+	overflow:hidden;
+
+}
+
+.navbar a{
+	color:#59fc00;
+}
+
+a:hover{
+	color:black;
+	transition:1s ease-in-out;
+}
+
+.navbar li{
+	padding:5px 10px 0 10px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+.navbar li:hover{
+	background-color:white;
+	color:black;
+	transition:1s ease-in-out;
+	border-bottom:2px solid #59fc00;
+	
+}
+
+
+
+.menu{
+	display:none;
+}
+
+.dropdown{
+	display:none;
+}
+
+/*----------------------------logo section---------------------------*/
+
+.logo h2{
+	color:white;
+	margin-left:15px;
+	font-size:30px;
+
+}
+
+span{
+	color:#59fc00;
+}
+
+
+
+
+
+/*----------------------------home section -------------------------------*/
+.home{
+	width:100%;
+	height:90vh;
+	background-color:#191919;
+	justify-content:space-around;
+	display:flex;
+	overflow:hidden;
+	
+}
+
+.hero img{
+	max-width:20rem;
+	height:30rem;
+	padding-right:10%;
+
+}
+
+
+
+
+.home{
+	padding-top:10%;
+
+}
+
+.text{
+	margin:15% 0 0 5%;
+	color:white;
+
+}
+
+.text h2{
+	font-size:60px;
+	
+}
+
+.text p{
+	font-weight:bold;
+	font-size:20px;
+	margin-bottom:3%;
+}
+
+
+/*----------------------------about section -------------------------------*/
+
+.about{
+	width:100%;
+	background-color:#000000;
+	color:white;
+	position:relative;
+	justify-content:space-around;
+	align-item:center;
+	display:flex;
+	height:100vh;
+	overflow:hidden;
+
+}
+
+.second img{
+	width:23rem;
+	height:30rem;
+	padding-top:10%;
+	
+}
+
+.about-text{
+	text-align:center;
+	padding:15% 5% 0;
+	overflow:hidden;
+	text-oveflow:ellipsis;
+	
+}
+
+
+.about-text h2{   
+	font-size:40px;
+
+}
+
+.about-text h5{
+	font-size:25px;
+
+}
+.about-text p{
+	font-size:19px;
+
+}
+
+button a{
+	color:white;
+}
+
+button{
+	width:120px;
+	height:40px;
+	background-color:transparent;
+	outline:1px solid #59fc00;
+	color:white;
+	border-radius:5px;
+	font-size:16px;
+}
+
+button:hover{
+	background-color:#59fc00;
+}
+
+
+
+/*----------------------------Services Section Start------------------------*/
+
+
+.service{
+	background-color:#191919;
+	color:white;
+	width:100%;
+	overflow:hidden;
+}
+
+.service h2{
+	text-align:center;
+	color:white;
+	padding-top:5%;
+	font-size:40px; 
+}
+
+.container h3{
+	text-lign:center;
+	color:#59fc00;
+	 
+}
+
+.container{
+	display:flex;
+	min-height:400px;
+	justify-content:center;
+	padding-bottom:5%;
+
+}
+
+.container .card{
+	height:365px;
+	width:335px;
+	padding:20px 35px;
+	border-radius:20px;
+	background-color:#000000;
+	margin:15px;
+	position:relative;
+	overflow:hidden;
+	text-oveflow:ellipsis;
+
+}
+
+.card h3{
+	padding-top:15%;
+	text-align:center;
+	
+}
+
+.card p{
+	font-size:20px;
+	line-height:27px;
+	margin-bottom:5px;
+	margin-top:10px;
+}
+
+
+
+/*----------------------------contact section  -------------------------------*/
+
+.footer{
+
+	width:100%;
+	height:300px;
+	background-color:#000000;
+	overflow:hidden;
+	color:white
+}
+
+.footer h2{
+	text-align:center;
+	color:white;
+	padding-top:5%;
+	font-size:30px; 
+}
+	
+.tel{
+	justify-content:center;
+	text-align:center;
+	font-size:25px;
+	margin:20px;
+
+}
+
+.tel a{
+	color:white;
+	font-weight:bold;
+}
+
+.tel button{
+	width:150px;
+	font-size:16px;
+	color:white;
+	margin:20px;
+}
+
+
+
+
+/*----------------------------button animation -------------------------------*/
+
+button{
+	animation:egg 2s ease-in-out infinite;
+	animation-delay:2s;
+}
+
+@keyframes egg{
+	0%{
+
+		border-color:white;
+		transform:translateX(0px);
+	}
+
+	50%{
+
+
+		border-color:#59fc00;
+		transform:translateX(20px);
+	}
+
+	100%{
+		border-color:white;
+		transform:translateX(0px);
+	}
+}
+
+
+
+/*---------------------------- first img section animation ---------------*/
+
+
+.hero img{ 
+	animation:move 2s ease-in-out infinite;
+	animation-delay:2s;
+}
+
+
+@keyframes move{
+	
+	0%{
+		transform:translateY(0);
+	}
+
+	50%{
+		transform:translateY(-22px);
+	}
+
+
+	100%{
+		transform:translateY(0);
+	}
+
+}
+
+
+/*---------------------------- Developing the Responsive Part  ---------------*/
+
+
+
+@media (max-width:1106px){
+
+	.container{
+		flex-wrap:wrap;
+	}
+	
+	.navbar{
+		z-index:1010;
+	}
+	
+
+}
+
+
+@media (max-width: 858px){
+
+	.home{
+		display:block;
+		padding:5%;
+		height:auto;
+		display: flex;
+		flex-wrap:wrap;
+		
+	
+	}
+
+	.hero{
+		width:100%;
+		height:auto;
+
+	}
+
+	.text{
+		order: 2;
+		margin:5% 0 0 0;
+		padding-right:8%;
+
+	}
+
+
+	.about{
+		height:auto;
+		display:block;
+		justify-content:center;
+		align-item:center;
+		padding-bottom:10%;
+	}
+
+	.card{
+		line-height:5px;
+		
+	}
+		.tel button{
+		margin-bottom:1%;
+		margin-left:0%;
+		padding-left:0%;
+		margin-right:0%;
+		padding-right:0%;
+		margin-bottom:0%;
+		margin-top:3%;
+	}
+	
+	
+
+}
+
+
+@media (max-width:660px){
+
+
+
+	.navlist{
+		display:none;
+	}
+
+	.dropdown{
+		display:block;
+		position:relative;
+	}
+
+	.menu{
+		padding-right:0px;
+		margin-right:0px;
+		
+	}
+
+	.dropdown-content{
+		display:block;
+		padding:12% 16%;
+		position:absolute;
+
+	}	
+
+	.dropdown-content ul{
+		display:block;
+		margin-right:95%;
+		margin-top:14%;
+		background-color:black;
+		padding:12px 16px;
+		border:2px solid white;
+		display:none;
+		transition-delay:6s;
+		z-index:1;
+	}
+
+
+	.dropdown:hover ul{
+		display:block;
+		transition:8s ease-in;
+	}
+	
+	
+
+	.hero{
+		margin-left:5%;
+		margin-right:15%;
+	}
+
+	.hero img{
+		width:100%;
+		height:auto;
+	}
+
+	.second{
+		margin:10%;
+	}
+
+
+
+	.second img{
+		width:100%;
+		height:auto;
+		
+	}
+	
+	.text  p{
+		text-overflow:ellipsis;
+		}
+
+
+
+	.text h2{
+		font-size:40px;
+	
+	}
+
+	.menu{	
+		display:block;
+		padding: 2% 5% 10% 0;
+		cursor:pointer;
+	}
+	
+
+
+	 .tel{
+		font-size:20px;
+		width:auto;
+	}
+
+
+	.service{
+		height:auto;
+	}
+
+
+}
+
+@media (max-width:356px){
+
+	*{
+		height:auto;
+		
+	}
+
+	.home h2{
+		font-size:35px;
+	}
+	
+	.about-text{
+		text-align:left;
+		}
+
+	.logo h2{
+		font-size:22px;
+	}
+	
+	.card p{
+		line-height:20px;
+		font-size:16px;
+		font-weight:bold;
+		margin-top:0%;
+	}
+	
+
+	.card h3{
+		font-size:18px;
+		line-height:20px;
+	}
+
+
+	.card{
+		padding:3%;
+	}
+	
+.service .card{
+		height:auto;
+	}
+
+
+	.tel{
+		padding-top:10%;
+		font-size:18px;
+	}
+}
+
+
+
